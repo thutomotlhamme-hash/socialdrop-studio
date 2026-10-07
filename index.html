@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dishdrop — Every recipe you scroll past, saved</title>
+  <meta name="description" content="Drop a link from TikTok, Instagram, YouTube, Pinterest or any food blog and Dishdrop turns it into a clean, cookable recipe card." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="assets/logo.svg" alt="" width="36" height="36" />
+        <span data-brand-name>Dishdrop</span>
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" href="#get">Get the app</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="eyebrow">Your recipe box for the social age</p>
+          <h1>Stop screenshotting.<br /><span class="hl">Start cooking.</span></h1>
+          <p class="lead">Drop a link from TikTok, Instagram, YouTube, Pinterest or any food blog. <span data-brand-name>Dishdrop</span> pulls out the ingredients and steps and turns them into one clean recipe card, with no life story and no pop-ups.</p>
+
+          <form class="drop" id="dropForm" autocomplete="off">
+            <label class="sr-only" for="dropUrl">Recipe link</label>
+            <input id="dropUrl" type="url" placeholder="Paste a recipe link…" required />
+            <button class="btn btn--primary" type="submit">Drop it</button>
+          </form>
+          <p class="hint">Try it: <button type="button" class="link" data-sample>use a sample link</button></p>
+
+          <ul class="platforms" aria-label="Works with">
+            <li>TikTok</li><li>Instagram</li><li>YouTube</li><li>Pinterest</li><li>Facebook</li><li>Any website</li>
+          </ul>
+        </div>
+
+        <div class="phone" aria-live="polite">
+          <div class="phone__screen" id="card">
+            <div class="card card--empty">
+              <div class="card__img card__img--placeholder">🍳</div>
+              <p class="muted">Your recipe card will show up here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="wrap stats__row">
+        <div><strong>3 sec</strong><span>average import</span></div>
+        <div><strong>6+</strong><span>platforms supported</span></div>
+        <div><strong>1 tap</strong><span>to a grocery list</span></div>
+        <div><strong>0</strong><span>ads on your recipes</span></div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section">
+      <div class="wrap">
+        <h2 class="section__title">From scroll to stove in three steps</h2>
+        <ol class="steps">
+          <li>
+            <span class="steps__n">1</span>
+            <h3>Share</h3>
+            <p>Spot a dish you like, tap <em>Share</em> and pick <span data-brand-name>Dishdrop</span>. You can also paste the link straight in.</p>
+          </li>
+          <li>
+            <span class="steps__n">2</span>
+            <h3>We tidy it up</h3>
+            <p>We read the caption, video and page, then lay the ingredients and steps out as a clean card that's easy to scale.</p>
+          </li>
+          <li>
+            <span class="steps__n">3</span>
+            <h3>Cook</h3>
+            <p>Hands-free cook mode keeps your screen on and moves through each step at your pace.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section section--tint">
+      <div class="wrap">
+        <h2 class="section__title">Everything your kitchen needs</h2>
+        <div class="features">
+          <article class="feature"><span class="feature__ico">🛒</span><h3>Smart grocery lists</h3><p>Pull ingredients from several recipes into one list, grouped by supermarket aisle with duplicates merged.</p></article>
+          <article class="feature"><span class="feature__ico">📅</span><h3>Weekly meal planner</h3><p>Drag recipes onto days, plan leftovers, and let the shopping list build itself.</p></article>
+          <article class="feature"><span class="feature__ico">⚖️</span><h3>Scale &amp; convert</h3><p>Cook for 2 or 12. Quantities update instantly, and you can switch between metric and imperial.</p></article>
+          <article class="feature"><span class="feature__ico">📁</span><h3>Collections</h3><p>Weeknight dinners, braai day, meal prep: organise recipes your way and share boards with family.</p></article>
+          <article class="feature"><span class="feature__ico">🥗</span><h3>Nutrition at a glance</h3><p>Get estimated calories and macros for every recipe, automatically.</p></article>
+          <article class="feature"><span class="feature__ico">📴</span><h3>Works offline</h3><p>Saved recipes stay on your phone, even when the load-shedding schedule doesn't cooperate.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="wrap">
+        <h2 class="section__title">Simple pricing</h2>
+        <div class="pricing">
+          <div class="plan">
+            <h3>Free</h3>
+            <p class="plan__price">R0</p>
+            <ul><li>Save up to 25 recipes</li><li>Import from any link</li><li>Basic grocery list</li></ul>
+            <a class="btn btn--ghost" href="#get">Start free</a>
+          </div>
+          <div class="plan plan--pro">
+            <span class="badge">Most popular</span>
+            <h3>Pro</h3>
+            <p class="plan__price">R49<span>/month</span></p>
+            <ul><li>Unlimited recipes</li><li>Meal planner</li><li>Nutrition info</li><li>Shared collections</li><li>Offline access</li></ul>
+            <a class="btn btn--primary" href="#get">Try 7 days free</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--tint">
+      <div class="wrap wrap--narrow">
+        <h2 class="section__title">Questions</h2>
+        <details><summary>Which apps can I import from?</summary><p>TikTok, Instagram, YouTube, Pinterest and Facebook, plus nearly any recipe website or blog.</p></details>
+        <details><summary>What if a video has no written recipe?</summary><p>We transcribe the audio and read the on-screen text to rebuild the recipe. You can always edit it afterwards.</p></details>
+        <details><summary>Is my recipe box private?</summary><p>Yes. Your recipes are only visible to you unless you choose to share a collection.</p></details>
+        <details><summary>Can I cancel Pro anytime?</summary><p>Yes, with one tap in settings. Your recipes are yours to keep.</p></details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="get" class="cta">
+      <div class="wrap cta__inner">
+        <h2>Your next favourite meal is already in your feed.</h2>
+        <p>Get <span data-brand-name>Dishdrop</span> free on iOS and Android.</p>
+        <div class="stores">
+          <a class="store" href="#" aria-label="Download on the App Store"> App Store</a>
+          <a class="store" href="#" aria-label="Get it on Google Play">▶ Google Play</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="yr"></span> <span data-brand-name>Dishdrop</span> by SocialDrop Studio</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="mailto:hello@dishdrop.app">hello@dishdrop.app</a></span>
+    </div>
+  </footer>
+
+  <!-- Mobile download banner -->
+  <div class="banner" id="banner" hidden>
+    <img src="assets/logo.svg" alt="" width="40" height="40" />
+    <div><strong>Get the app</strong><span>Save recipes in one tap</span></div>
+    <a class="btn btn--primary btn--sm" href="#get">Open</a>
+    <button class="banner__x" type="button" aria-label="Dismiss">×</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
